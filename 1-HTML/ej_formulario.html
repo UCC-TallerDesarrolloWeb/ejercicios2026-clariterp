@@ -18,26 +18,109 @@
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
-
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
-
-Agregue un comentario:
-
-Boton de Enviar
-
-
-</body>
+ <form name="form-subscripcion">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+          <label for="Nombre">Nombre:</label>
+          <input
+            type="text"
+            placeholder="Ingrese su nombre"
+            id="Nombre"
+            name="Nombre"
+          />
+        </p>
+        <p>
+          <label for="Apellido">Apellido:</label>
+          <input
+            type="text"
+            placeholder="Ingrese su apellido"
+            id="Apellido"
+            name="Apellido"
+          />
+        </p>
+        <p>
+          Sexo:
+          <label for="Masculino">Masculino</label>
+          <input type="radio" name="sex" value="Masculino" id="Masculino" />
+          <label for="Femenino">Femenino</label>
+          <input type="radio" name="sex" value="Femenino" id="Femenino" />
+        </p>
+        <p>
+          <label for="Edad">Edad:</label>
+          <input type="number" name="edad" placeholder="edad" id="Edad" />
+        </p>
+        <p>
+          <label for="Email"> Email: </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="usuario@dominio.com"
+            id="Email"
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Datos de la Cuenta</legend>
+        <p>
+          <label for="Usuario"> Usuario: </label>
+          <input
+            type="text"
+            name="usuario"
+            placeholder="Nombre de usuario"
+            id="Usuario"
+          />
+        </p>
+        <p>
+          <label for="Password"> Password: </label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            id="Password"
+          />
+        </p>
+        <p>
+          <label for="ConfirmarPassword"> Confirmar Password: </label>
+          <input
+            type="password"
+            name="password-confirmar"
+            placeholder="Repita Contraseña"
+            id="ConfirmarPassword"
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Tipo de Suscripción</legend>
+        <p>
+          <label for="TipoServicio">Tipo de servicio:</label>
+          <select name="tipo-de-servicio" id="TipoServicio">
+            <option value="Free">Free</option>
+            <option value="Standard">Standard</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </p>
+        <p>
+          Tema: <label for="Politica">Política</label>
+          <input type="checkbox" value="Política" id="Politica" />
+          <label for="Negocios">Negocios</label>
+          <input type="checkbox" value="Negocios" id="Negocios" />
+          <label for="Tecnologia">Tecnología</label>
+          <input type="checkbox" value="Tecnología" id="Tecnologia" />
+          <label for="Salud">Salud</label>
+          <input type="checkbox" value="Salud" id="Salud" />
+        </p>
+        <p>
+          <label for="Comentario">Agregue un comentario:</label>
+          <textarea id="Comentario">
+        Deje su comentario
+    </textarea
+          >
+        </p>
+      </fieldset>
+      <p>
+        <button>Boton de Enviar</button>
+      </p>
+    </form>
+  </body>
 </html>
