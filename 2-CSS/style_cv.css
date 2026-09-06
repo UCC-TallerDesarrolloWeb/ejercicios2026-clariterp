@@ -1,0 +1,22 @@
+
+        .main-style{
+            text-align: center;
+            background:linear-gradient(to right, rgb(8, 76, 90), rgb(106, 179, 190));
+        }
+        h3{
+            font-family: "Caacupe One", sans-serif;
+            text-shadow: 10px 8px rgb(235, 7, 201);
+        }
+div{
+    border: 1px solid rgb(3, 161, 159);
+    margin: 15px;
+    padding: 10px 25px 12px;
+    background-color: rgba(0, 255, 229, 0.315);
+    border-radius: 15px 30px 50px 100px;
+    box-shadow: 10px 8px rgb(235, 7, 201);
+}
+/*así hago comentarios en css/*
+#user{
+    width: 10%;
+    float: left;
+}
