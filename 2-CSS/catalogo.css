@@ -1,0 +1,16 @@
+main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    & div{
+        border: 1px solido black;
+        margin: 10px;
+        text-align: center;
+        border-radius:15px;
+        padding: 10px;
+
+        & img{
+            width: 100%;
+        }
+    }
+}
